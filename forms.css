@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h3 {
+  color: #3e5341;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+form {
+  width: 757px;
+  height: 426px;
+  flex-shrink: 0;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr 1fr;
+  justify-items: center;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+form > div > label {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  padding-bottom: 10px;
+}
+
+form > div > input,
+form > div > select {
+  width: 320px;
+  height: 45px;
+  font-size: 16px;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(76, 114, 82, 1);
+  background: rgba(168, 200, 228, 0);
+}
+
+input::placeholder {
+  color: rgba(30, 30, 30, 0.65);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  background: #3e5341;
+  font-size: 20px;
+  color: white;
+}
